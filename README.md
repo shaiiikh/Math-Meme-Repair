@@ -69,9 +69,7 @@ The model used for this project is **unsloth/DeepSeek-R1-Distill-Llama-8B**, fin
 
 4. Generate meme corrections:  
    run the inference cell in the **Q2.ipynb** file
-
-5. Run Streamlit app:  
-   `streamlit run app.py`
+   
 
 ## Conclusion
 
