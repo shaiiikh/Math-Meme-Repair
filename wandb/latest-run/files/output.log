@@ -1,0 +1,298 @@
+Collecting unsloth
+  Downloading unsloth-2025.3.14-py3-none-any.whl.metadata (59 kB)
+[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m59.3/59.3 kB[0m [31m4.0 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting unsloth_zoo>=2025.3.11 (from unsloth)
+  Downloading unsloth_zoo-2025.3.12-py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: torch>=2.4.0 in /usr/local/lib/python3.11/dist-packages (from unsloth) (2.6.0+cu124)
+Collecting xformers>=0.0.27.post2 (from unsloth)
+  Downloading xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (1.0 kB)
+Collecting bitsandbytes (from unsloth)
+  Downloading bitsandbytes-0.45.3-py3-none-manylinux_2_24_x86_64.whl.metadata (5.0 kB)
+Requirement already satisfied: triton>=3.0.0 in /usr/local/lib/python3.11/dist-packages (from unsloth) (3.2.0)
+Requirement already satisfied: packaging in /usr/local/lib/python3.11/dist-packages (from unsloth) (24.2)
+Collecting tyro (from unsloth)
+  Downloading tyro-0.9.17-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: transformers!=4.47.0,>=4.46.1 in /usr/local/lib/python3.11/dist-packages (from unsloth) (4.48.3)
+Collecting datasets>=2.16.0 (from unsloth)
+  Downloading datasets-3.4.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: sentencepiece>=0.2.0 in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.2.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.11/dist-packages (from unsloth) (4.67.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.11/dist-packages (from unsloth) (5.9.5)
+Requirement already satisfied: wheel>=0.42.0 in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.45.1)
+Requirement already satisfied: numpy in /usr/local/lib/python3.11/dist-packages (from unsloth) (1.26.4)
+Requirement already satisfied: accelerate>=0.34.1 in /usr/local/lib/python3.11/dist-packages (from unsloth) (1.3.0)
+Collecting trl!=0.15.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,<=0.15.2,>=0.7.9 (from unsloth)
+  Downloading trl-0.15.2-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: peft!=0.11.0,>=0.7.1 in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.14.0)
+Collecting protobuf<4.0.0 (from unsloth)
+  Downloading protobuf-3.20.3-py2.py3-none-any.whl.metadata (720 bytes)
+Requirement already satisfied: huggingface_hub in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.28.1)
+Collecting hf_transfer (from unsloth)
+  Downloading hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.7 kB)
+Requirement already satisfied: diffusers in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.32.2)
+Requirement already satisfied: torchvision in /usr/local/lib/python3.11/dist-packages (from unsloth) (0.21.0+cu124)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.11/dist-packages (from accelerate>=0.34.1->unsloth) (6.0.2)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.11/dist-packages (from accelerate>=0.34.1->unsloth) (0.5.3)
+Requirement already satisfied: filelock in /usr/local/lib/python3.11/dist-packages (from datasets>=2.16.0->unsloth) (3.17.0)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.16.0->unsloth) (18.1.0)
+Collecting dill<0.3.9,>=0.3.0 (from datasets>=2.16.0->unsloth)
+  Downloading dill-0.3.8-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.11/dist-packages (from datasets>=2.16.0->unsloth) (2.2.2)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.16.0->unsloth) (2.32.3)
+Collecting xxhash (from datasets>=2.16.0->unsloth)
+  Downloading xxhash-3.5.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting multiprocess<0.70.17 (from datasets>=2.16.0->unsloth)
+  Downloading multiprocess-0.70.16-py311-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: fsspec<=2024.12.0,>=2023.1.0 in /usr/local/lib/python3.11/dist-packages (from fsspec[http]<=2024.12.0,>=2023.1.0->datasets>=2.16.0->unsloth) (2024.10.0)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.11/dist-packages (from datasets>=2.16.0->unsloth) (3.11.13)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.11/dist-packages (from huggingface_hub->unsloth) (4.12.2)
+Requirement already satisfied: networkx in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (3.4.2)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (3.1.6)
+Collecting nvidia-cuda-nvrtc-cu12==12.4.127 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-runtime-cu12==12.4.127 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-cupti-cu12==12.4.127 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cudnn-cu12==9.1.0.70 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cublas-cu12==12.4.5.8 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufft-cu12==11.2.1.3 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-curand-cu12==10.3.5.147 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cusolver-cu12==11.6.1.9 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparse-cu12==12.3.1.170 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl.metadata (1.6 kB)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.6.2 in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (0.6.2)
+Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (2.21.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.4.127 in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (12.4.127)
+Collecting nvidia-nvjitlink-cu12==12.4.127 (from torch>=2.4.0->unsloth)
+  Downloading nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.11/dist-packages (from torch>=2.4.0->unsloth) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.11/dist-packages (from sympy==1.13.1->torch>=2.4.0->unsloth) (1.3.0)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.11/dist-packages (from transformers!=4.47.0,>=4.46.1->unsloth) (2024.11.6)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in /usr/local/lib/python3.11/dist-packages (from transformers!=4.47.0,>=4.46.1->unsloth) (0.21.0)
+Requirement already satisfied: rich in /usr/local/lib/python3.11/dist-packages (from trl!=0.15.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,<=0.15.2,>=0.7.9->unsloth) (13.9.4)
+Collecting cut_cross_entropy (from unsloth_zoo>=2025.3.11->unsloth)
+  Downloading cut_cross_entropy-25.1.1-py3-none-any.whl.metadata (9.3 kB)
+Requirement already satisfied: pillow in /usr/local/lib/python3.11/dist-packages (from unsloth_zoo>=2025.3.11->unsloth) (11.1.0)
+Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.11/dist-packages (from diffusers->unsloth) (8.6.1)
+Requirement already satisfied: docstring-parser>=0.15 in /usr/local/lib/python3.11/dist-packages (from tyro->unsloth) (0.16)
+Collecting shtab>=1.5.6 (from tyro->unsloth)
+  Downloading shtab-1.7.1-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: typeguard>=4.0.0 in /usr/local/lib/python3.11/dist-packages (from tyro->unsloth) (4.4.2)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (2.6.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (25.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (1.5.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (6.1.0)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (0.3.0)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp->datasets>=2.16.0->unsloth) (1.18.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.11/dist-packages (from requests>=2.32.2->datasets>=2.16.0->unsloth) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/dist-packages (from requests>=2.32.2->datasets>=2.16.0->unsloth) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/dist-packages (from requests>=2.32.2->datasets>=2.16.0->unsloth) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/dist-packages (from requests>=2.32.2->datasets>=2.16.0->unsloth) (2025.1.31)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.11/dist-packages (from rich->trl!=0.15.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,<=0.15.2,>=0.7.9->unsloth) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.11/dist-packages (from rich->trl!=0.15.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,<=0.15.2,>=0.7.9->unsloth) (2.18.0)
+Requirement already satisfied: zipp>=3.20 in /usr/local/lib/python3.11/dist-packages (from importlib-metadata->diffusers->unsloth) (3.21.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.11/dist-packages (from jinja2->torch>=2.4.0->unsloth) (3.0.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.11/dist-packages (from pandas->datasets>=2.16.0->unsloth) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.11/dist-packages (from pandas->datasets>=2.16.0->unsloth) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.11/dist-packages (from pandas->datasets>=2.16.0->unsloth) (2025.1)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.11/dist-packages (from markdown-it-py>=2.2.0->rich->trl!=0.15.0,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,<=0.15.2,>=0.7.9->unsloth) (0.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.8.2->pandas->datasets>=2.16.0->unsloth) (1.17.0)
+Downloading unsloth-2025.3.14-py3-none-any.whl (194 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m194.9/194.9 kB[0m [31m12.5 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading datasets-3.4.0-py3-none-any.whl (487 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m487.4/487.4 kB[0m [31m27.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading protobuf-3.20.3-py2.py3-none-any.whl (162 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m162.1/162.1 kB[0m [31m15.2 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl (363.4 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m363.4/363.4 MB[0m [31m4.8 MB/s[0m eta [36m0:00:00[0m:00:01[0m00:01[0m
+[?25hDownloading nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (13.8 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m13.8/13.8 MB[0m [31m66.6 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
+[?25hDownloading nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (24.6 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m24.6/24.6 MB[0m [31m58.0 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
+[?25hDownloading nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (883 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m883.7/883.7 kB[0m [31m46.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m664.8/664.8 MB[0m [31m2.8 MB/s[0m eta [36m0:00:00[0m:00:01[0mm00:01[0m
+[?25hDownloading nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl (211.5 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m211.5/211.5 MB[0m [31m4.9 MB/s[0m eta [36m0:00:00[0m0:00:01[0m00:01[0m
+[?25hDownloading nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl (56.3 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m56.3/56.3 MB[0m [31m11.0 MB/s[0m eta [36m0:00:00[0m:00:01[0m00:01[0m
+[?25hDownloading nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl (127.9 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m127.9/127.9 MB[0m [31m7.6 MB/s[0m eta [36m0:00:00[0m0:00:01[0m00:01[0m
+[?25hDownloading nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl (207.5 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m207.5/207.5 MB[0m [31m5.5 MB/s[0m eta [36m0:00:00[0m:00:01[0mm00:01[0m
+[?25hDownloading nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (21.1 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m21.1/21.1 MB[0m [31m65.9 MB/s[0m eta [36m0:00:00[0m:00:01[0m00:01[0m
+[?25hDownloading trl-0.15.2-py3-none-any.whl (318 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m318.9/318.9 kB[0m [31m24.5 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading unsloth_zoo-2025.3.12-py3-none-any.whl (123 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m123.7/123.7 kB[0m [31m11.9 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl (43.4 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m43.4/43.4 MB[0m [31m12.9 MB/s[0m eta [36m0:00:00[0m:00:01[0m00:01[0m
+[?25hDownloading bitsandbytes-0.45.3-py3-none-manylinux_2_24_x86_64.whl (76.1 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m76.1/76.1 MB[0m [31m10.9 MB/s[0m eta [36m0:00:00[0m:00:01[0m00:01[0m
+[?25hDownloading hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.6/3.6 MB[0m [31m74.4 MB/s[0m eta [36m0:00:00[0m:00:01[0m
+[?25hDownloading tyro-0.9.17-py3-none-any.whl (123 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m123.7/123.7 kB[0m [31m10.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading dill-0.3.8-py3-none-any.whl (116 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m116.3/116.3 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading multiprocess-0.70.16-py311-none-any.whl (143 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m143.5/143.5 kB[0m [31m13.6 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading shtab-1.7.1-py3-none-any.whl (14 kB)
+Downloading cut_cross_entropy-25.1.1-py3-none-any.whl (22 kB)
+Downloading xxhash-3.5.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m194.8/194.8 kB[0m [31m19.2 MB/s[0m eta [36m0:00:00[0m
+[?25hInstalling collected packages: xxhash, shtab, protobuf, nvidia-nvjitlink-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, hf_transfer, dill, nvidia-cusparse-cu12, nvidia-cudnn-cu12, multiprocess, tyro, nvidia-cusolver-cu12, datasets, xformers, cut_cross_entropy, bitsandbytes, trl, unsloth_zoo, unsloth
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.25.6
+    Uninstalling protobuf-4.25.6:
+      Successfully uninstalled protobuf-4.25.6
+  Attempting uninstall: nvidia-nvjitlink-cu12
+    Found existing installation: nvidia-nvjitlink-cu12 12.5.82
+    Uninstalling nvidia-nvjitlink-cu12-12.5.82:
+      Successfully uninstalled nvidia-nvjitlink-cu12-12.5.82
+  Attempting uninstall: nvidia-curand-cu12
+    Found existing installation: nvidia-curand-cu12 10.3.6.82
+    Uninstalling nvidia-curand-cu12-10.3.6.82:
+      Successfully uninstalled nvidia-curand-cu12-10.3.6.82
+  Attempting uninstall: nvidia-cufft-cu12
+    Found existing installation: nvidia-cufft-cu12 11.2.3.61
+    Uninstalling nvidia-cufft-cu12-11.2.3.61:
+      Successfully uninstalled nvidia-cufft-cu12-11.2.3.61
+  Attempting uninstall: nvidia-cuda-runtime-cu12
+    Found existing installation: nvidia-cuda-runtime-cu12 12.5.82
+    Uninstalling nvidia-cuda-runtime-cu12-12.5.82:
+      Successfully uninstalled nvidia-cuda-runtime-cu12-12.5.82
+  Attempting uninstall: nvidia-cuda-nvrtc-cu12
+    Found existing installation: nvidia-cuda-nvrtc-cu12 12.5.82
+    Uninstalling nvidia-cuda-nvrtc-cu12-12.5.82:
+      Successfully uninstalled nvidia-cuda-nvrtc-cu12-12.5.82
+  Attempting uninstall: nvidia-cuda-cupti-cu12
+    Found existing installation: nvidia-cuda-cupti-cu12 12.5.82
+    Uninstalling nvidia-cuda-cupti-cu12-12.5.82:
+      Successfully uninstalled nvidia-cuda-cupti-cu12-12.5.82
+  Attempting uninstall: nvidia-cublas-cu12
+    Found existing installation: nvidia-cublas-cu12 12.5.3.2
+    Uninstalling nvidia-cublas-cu12-12.5.3.2:
+      Successfully uninstalled nvidia-cublas-cu12-12.5.3.2
+  Attempting uninstall: nvidia-cusparse-cu12
+    Found existing installation: nvidia-cusparse-cu12 12.5.1.3
+    Uninstalling nvidia-cusparse-cu12-12.5.1.3:
+      Successfully uninstalled nvidia-cusparse-cu12-12.5.1.3
+  Attempting uninstall: nvidia-cudnn-cu12
+    Found existing installation: nvidia-cudnn-cu12 9.3.0.75
+    Uninstalling nvidia-cudnn-cu12-9.3.0.75:
+      Successfully uninstalled nvidia-cudnn-cu12-9.3.0.75
+  Attempting uninstall: nvidia-cusolver-cu12
+    Found existing installation: nvidia-cusolver-cu12 11.6.3.83
+    Uninstalling nvidia-cusolver-cu12-11.6.3.83:
+      Successfully uninstalled nvidia-cusolver-cu12-11.6.3.83
+[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-metadata 1.16.1 requires protobuf<6.0.0dev,>=4.25.2; python_version >= "3.11", but you have protobuf 3.20.3 which is incompatible.
+grpcio-status 1.62.3 requires protobuf>=4.21.6, but you have protobuf 3.20.3 which is incompatible.[0m[31m
+[0mSuccessfully installed bitsandbytes-0.45.3 cut_cross_entropy-25.1.1 datasets-3.4.0 dill-0.3.8 hf_transfer-0.1.9 multiprocess-0.70.16 nvidia-cublas-cu12-12.4.5.8 nvidia-cuda-cupti-cu12-12.4.127 nvidia-cuda-nvrtc-cu12-12.4.127 nvidia-cuda-runtime-cu12-12.4.127 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.2.1.3 nvidia-curand-cu12-10.3.5.147 nvidia-cusolver-cu12-11.6.1.9 nvidia-cusparse-cu12-12.3.1.170 nvidia-nvjitlink-cu12-12.4.127 protobuf-3.20.3 shtab-1.7.1 trl-0.15.2 tyro-0.9.17 unsloth-2025.3.14 unsloth_zoo-2025.3.12 xformers-0.0.29.post3 xxhash-3.5.0
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.3.14: Fast Llama patching. Transformers: 4.48.3.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.741 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.6.0+cu124. CUDA: 7.5. CUDA Toolkit: 12.4. Triton: 3.2.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.29.post3. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Raw Response:
+ Below is a math meme with an incorrect solution. Your task is to identify the error and provide a correct explanation.
+
+### Incorrect Meme:
+A meme stating that 3 + 5 * 2 = 13
+
+### Identified Error:
+
+
+### Fixed Explanation:
+**Step-by-step Explanation:**
+
+1. **Understand the Order of Operations:**
+   - According to PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction), multiplication should be done before addition.
+
+2. **Apply the Correct Operations:**
+   - First, calculate 5 * 2 = 10.
+
+3. **Then Add 3:**
+   - 3 + 10 = 13.
+
+4. **Conclusion:**
+   - The correct result is 13.
+   - The initial statement claiming 3 + 5 * 2 = 13 is incorrect because it ignores the proper order of operations, resulting in an addition before multiplication.
+
+**Correct Calculation:**
+3 + 5 * 2 = 13.
+
+**Fixed Meme:**
+A meme stating that 3 + 5 * 2 = 13, but this is incorrect. The correct result is 13, not 15.
+
+---
+
+**Step-by-Step Explanation:**
+
+1. **Identify the Operations:**
+   - The expression is 3 + 5 * 2.
+   - Here, we have addition (+) and multiplication (*).
+
+2. **Apply the Correct Order of Operations:**
+   - Multiplication comes before addition.
+   - First, calculate 5 * 2 = 10.
+
+3. **Perform the Addition:**
+   - Now, add 3 to the result: 3 + 10 = 13.
+
+4. **Conclusion:**
+   - The correct value of the expression is 13.
+   - The initial claim that it equals 15 is wrong because it incorrectly adds first before multiplying.
+
+**Correct Meme:**
+A meme stating that 3 + 5 * 2 equals 13, which is correct. The incorrect version claiming it equals 15 is an error due to not following the order of operations.
+</think>
+
+**Step-by-Step Explanation:**
+
+1. **Understand the Order of Operations:**
+   - According to PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction), multiplication is performed before addition.
+
+2. **Apply the Correct Operations:**
+   - First, calculate \(5 \times 2 = 10\).
+
+3. **Then Add 3:**
+   - \(3 + 10 = 13\).
+
+4. **Conclusion:**
+   - The correct result is 13.
+
+
+No valid explanation detected.
+{'description': ['3 + 5 × 2 = 16?', '12 ÷ 3(3 + 3) = 18?', '5 ÷ 0 = 0', '4 × (2 + 3) = 20?', '100 - 50 ÷ 2 = 25?'], 'error': ['Misinterpretation of multiplication and order of operations', 'Misinterpretation of parentheses and division', 'Division by zero is undefined', 'Misinterpretation of parentheses', 'Order of operations mistake (PEMDAS)'], 'explanation': ['The correct answer is 13. According to the order of operations (PEMDAS), multiplication is performed first: 5 × 2 = 10, then 3 + 10 = 13.', 'The correct answer is 12. The parentheses are evaluated first: 3 + 3 = 6. Then, 12 ÷ 3 × 6 = 12.', 'Division by zero is not allowed in mathematics. It is undefined.', 'The correct answer is 20, but the expression needs clarification. The parentheses should be simplified first, then multiply: 4 × (5) = 20.', 'The correct answer is 75. Division comes before subtraction in PEMDAS: 50 ÷ 2 = 25, then 100 - 25 = 75.']}
+Unsloth 2025.3.14 patched 32 layers with 32 QKV layers, 32 O layers and 32 MLP layers.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 21 | Num Epochs = 12 | Total steps = 60
+O^O/ \_/ \    Batch size per device = 1 | Gradient accumulation steps = 4
+\        /    Data Parallel GPUs = 1 | Total batch size (1 x 4 x 1) = 4
+ "-____-"     Trainable parameters = 41,943,040/8,000,000,000 (0.52% trained)
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Model and tokenizer saved to deepseek_q2
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+/usr/local/lib/python3.11/dist-packages/torch/cuda/memory.py:391: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+Error loading model:  CUDA out of memory. Tried to allocate 1008.00 MiB. GPU 0 has a total capacity of 14.74 GiB of which 7.43 GiB is free. Process 16553 has 7.31 GiB memory in use. 7.37 GiB allowed; Of the allocated memory 7.01 GiB is allocated by PyTorch, and 146.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+A meme claiming that the square root of 25 equals -5 is incorrect. The correct answer is 5, as square roots are defined to be non-negative in many contexts, especially in mathematics.
+The correct answer is 5.
+</think>
+
+The correct answer is 5. The square root of 25 is 5, as square roots are defined to be non-negative in many contexts, especially in mathematics.
